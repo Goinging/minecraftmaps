@@ -7,7 +7,7 @@ map.setView([44.068,-123.118], 14);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/goinging/cloy47qf100al01r67k1f6l1i/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ29pbmdpbmciLCJhIjoiY2xvaXlvNTYzMDBrMTJrc2I3Z2s2cjFtbiJ9.hZslmiJpn9kpQtAgOFI23A').addTo(map);
 
-fetch('data/classified.geojson')
+fetch('minecraftmaps/data/classified.geojson')
     .then(response => response.json())
     .then(data => {
       L.geoJSON(data, {
