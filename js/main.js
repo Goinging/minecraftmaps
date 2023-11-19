@@ -17,7 +17,7 @@ fetch('data/classified.geojson')
                 if (feature.properties.Class_name === 'Tree/Leaves') {
                     popupContent = `<div> 
                         <h3>Leaves</h3>
-                        <img src="img/Leaves" style="width: 150px; height: 150px"> 
+                        <img src="img/Leaves.png" style="width: 150px; height: 150px"> 
                     </div>`;
                 } else if (feature.properties.Class_name === 'Pumpkins') {
                     popupContent = `<div> 
