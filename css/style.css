@@ -1,0 +1,47 @@
+/* Stylesheet by Ian H Freel, 2023 */
+#map {width:620px; height:620px;}
+.center {
+    border: 3px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+img {
+  margin-left: auto;
+  margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    display: block;
+  }
+  h1 {
+    text-align: center;
+    color:#eeeeee; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body { 
+	background-color: #222831; 
+}
+	
+.second-color { 
+  
+  border: 5px, #393e46;
+}
+
+.third-color { 
+	background: #0092ca; 
+}
+
+.fourth-color { 
+	background: #eeeeee; 
+}
+
+  h3 {
+    text-align: center;
+}
+
+
+.image-container img {
+  display: inline-block;
+ }
+
