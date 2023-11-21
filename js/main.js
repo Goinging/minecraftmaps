@@ -1,4 +1,5 @@
 const map = L.map("map", {
+    zoomControl: false,
     minZoom: 14,
     maxZoom: 15
 });
@@ -17,33 +18,33 @@ fetch('data/classified.geojson')
                 if (feature.properties.Class_name === 'Tree/Leaves') {
                     popupContent = `<div> 
                         <h3>Leaves</h3>
-                        <img src="img/Leaves.png" style="width: 150px; height: 150px"> 
+                        <img src="/img/Leaves.png" style="width: 150px; height: 150px"> 
                     </div>`;
                 } else if (feature.properties.Class_name === 'Pumpkins') {
                     popupContent = `<div> 
                     <h3>Pumpkin</h3>
-                    <img src="img/Pumpkin.png" style="width: 150px; height: 150px"> 
+                    <img src="/img/Pumpkin.png" style="width: 150px; height: 150px"> 
                 </div>`;
                 } else if (feature.properties.Class_name === 'Grass Block') {
                     popupContent = `<div> 
                         <h3>Grass Block</h3>
-                        <img src="img/Grass Block.png" style="width: 150px; height: 150px"> 
+                        <img src="/img/Grass Block.png" style="width: 150px; height: 150px"> 
                     </div>`;
                 } else if (feature.properties.Class_name === 'Sand') {
                     popupContent = `<div> 
                     <h3>Sand</h3>
-                    <img src="img/sand.png" style="width: 150px; height: 150px"> 
+                    <img src="/img/sand.png" style="width: 150px; height: 150px"> 
                 </div>`;
                 } else if (feature.properties.Class_name === 'Stone/Gravel') {
                     popupContent = `<div class="popup-container image-container"> 
                         <h3>Stone and Gravel</h3>
-                        <img src="img/stone.png" style="width: 150px; height: 150px">
-                        <img src="img/Gravel.png" style="width: 150px; height: 150px">
+                        <img src="/img/stone.png" style="width: 150px; height: 150px">
+                        <img src="/img/Gravel.png" style="width: 150px; height: 150px">
                     </div>`;
                 } else if (feature.properties.Class_name === 'Water') {
                     popupContent = `<div> 
                     <h3>Water</h3>
-                    <img src="img/water.png" style="width: 150px; height: 150px"> 
+                    <img src="/img/water.png" style="width: 150px; height: 150px"> 
                 </div>`;
                 }
                 currentLayer = layer;
