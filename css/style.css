@@ -14,7 +14,7 @@ img {
   }
   h1 {
     text-align: center;
-    color:#eeeeee; 
+    color:#0092ca; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -27,8 +27,11 @@ body {
   border: 5px, #393e46;
 }
 
-.third-color { 
-	background: #0092ca; 
+p { 
+  text-align: center;
+	color: #eeeeeed5; 
+  font-family: sans-serif;
+  font-size: 23px;
 }
 
 .fourth-color { 
