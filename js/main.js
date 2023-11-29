@@ -73,3 +73,8 @@ fetch('data/classified.geojson')
         }
     }).addTo(map);
 });
+
+
+var map2 = L.map('map2').setView([0, 0], 2);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/goinging/clpk5uv4f008501r7b2aw45xv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ29pbmdpbmciLCJhIjoiY2xvaXlvNTYzMDBrMTJrc2I3Z2s2cjFtbiJ9.hZslmiJpn9kpQtAgOFI23A').addTo(map2);
