@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
         <script src="lib/leaflet/leaflet.js"></script>
+        <script src="lib/leaflet-side-by-side.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
             <title></title>
@@ -14,8 +15,7 @@
         <body>
 
            <div> <h1>Minecraft vs Real Life Maps</h1></div>
-           <br></br>
-           <img src="img/map.png" style="width: 580px; height: 580px">
+           <img src="img/map.png" class="img2" style="width: 580px; height: 580px">
 <div>
 <p>    
     Maps are a item in the video game Minecraft that by holding in<br> 
@@ -45,7 +45,7 @@
                 </div>
                 <br></br>
                 <div> 
-                    <img src="img/reference.png" style="width: 700px; height: 500px">
+                    <img src="img/reference.png" class="img2" style="width: 700px; height: 500px">
                     </div>
                             <div>
                                 <p>
@@ -56,11 +56,25 @@
                                     They show hills by adding darker and lighter shading on either <br>
                                     side. For water depth the darker the blue, the deeper the water. <br>
                                     For the function maps in Minecraft serve, this is all the detail <br>
-                                    that is necessary, but what if you could could make a real map look <br>
-                                    like this?
+                                    that is necessary, but what if you could could make a map of a real<br>
+                                    area look like this?
                                 </p>
                             </div>
-                            <div id="map2"></div>
+                            <br></br>
+                            <div id="map2" class="center2"></div>
+                              <div>
+                                 <p>
+                                This is an example of what a real place may look like if it <br>
+                                where classified like a Minecraft map. You can see how it is far from <br>
+                                perfect for many reasons. This was made using one of many Minecraft Maps<br>
+                                created by Mattias Brennecke on his website called <a href=https://earth.motfe.net>Minecraft Earth Map</a>.<br>
+                                The area on the map shown is around the city of Tillimook on the Oregon Coast.<br>
+                                The satellite image was taken from Sentinel 2. The Minecraft Map I used<br>
+                                is at 1:500 scale meaning that there are 500 meters in real life for every<br>
+                                one square on the map.
+
+                                </p>
+                            </div>
                             <script src="js/main.js"></script>
         </body>
 </html>

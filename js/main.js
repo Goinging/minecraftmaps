@@ -75,6 +75,27 @@ fetch('data/classified.geojson')
 });
 
 
-var map2 = L.map('map2').setView([0, 0], 2);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/goinging/clpk5uv4f008501r7b2aw45xv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ29pbmdpbmciLCJhIjoiY2xvaXlvNTYzMDBrMTJrc2I3Z2s2cjFtbiJ9.hZslmiJpn9kpQtAgOFI23A').addTo(map2);
+
+const map2 = L.map("map2", {
+    minZoom: 14,
+    maxZoom: 14,
+    zoomControl: false,
+    scrollWheelZoom: false,
+    dragging: false
+});
+
+map2.setView([44.0588232,-123.0391878], 14);
+
+var layer2= L.tileLayer('https://api.mapbox.com/styles/v1/goinging/clpk5uv4f008501r7b2aw45xv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ29pbmdpbmciLCJhIjoiY2xvaXlvNTYzMDBrMTJrc2I3Z2s2cjFtbiJ9.hZslmiJpn9kpQtAgOFI23A').addTo(map2);
+var layer1 = L.tileLayer('https://api.mapbox.com/styles/v1/goinging/clpnk6z1900bb01r8ccajed50/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ29pbmdpbmciLCJhIjoiY2xvaXlvNTYzMDBrMTJrc2I3Z2s2cjFtbiJ9.hZslmiJpn9kpQtAgOFI23A').addTo(map2);
+
+
+L.control.sideBySide(layer1, layer2).addTo(map2);
+
+
+
+
+
+
+

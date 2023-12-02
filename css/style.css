@@ -1,21 +1,23 @@
 /* Stylesheet by Ian H Freel, 2023 */
-#map {width:620px; height:620px;}
+#map {width:620px; height:620px;
+  border-radius: 10px;}
 .center {
     margin: auto;
     width: 50%;
     padding: 10px;
   }
 img {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left:auto;
+    margin-right:auto;
     width: 50%;
     padding: 10px;
     display: block;
   }
-  h1 {
+h1 {
     text-align: center;
     color:#0092ca; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:sans-serif;
+    font-size: 45px;
 }
 
 body { 
@@ -46,7 +48,16 @@ p {
 .image-container img {
   display: inline-block;
  }
+ 
+#map2 {
+  width:790px; height:790px;
+border-radius: 10px;}
 
-#slider {
-  width: 100%;
+  .center2 {
+    margin: auto;}
+
+
+.img2
+{
+  border-radius: 20px;
 }
